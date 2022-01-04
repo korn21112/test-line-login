@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import Vue from 'vue'
 import App from './App.vue'
 Vue.prototype.$liff = window.liff
 Vue.config.productionTip = false
