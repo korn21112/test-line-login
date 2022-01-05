@@ -43,6 +43,7 @@ export default {
                 if (liff.isLoggedIn()) {
                     liff.getProfile()
                         .then(profile => {
+                            this.profile.userId=profile.userId
                             console.log(profile.userId)
                         }).catch((err) => {
                             console.log('error', err);
