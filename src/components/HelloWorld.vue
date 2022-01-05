@@ -81,16 +81,16 @@ export default {
     liff.init({ liffId: "1656343498-pwzGanJe" }, () => {
       console.log("in liff init")
       console.log(liff.isLoggedIn())
-      // if (liff.isLoggedIn()) {
-      //   // liff.getProfile()
-      //   //   .then(profile => {
-      //   //     console.log(profile.userId)
-      //   //   }).catch((err) => {
-      //   //     console.log('error', err);
-      //   //   });
-      // } else {
-      //   liff.login();
-      // }
+      if (liff.isLoggedIn()) {
+        liff.getProfile()
+          .then(profile => {
+            console.log(profile.userId)
+          }).catch((err) => {
+            console.log('error', err);
+          });
+      } else {
+        liff.login();
+      }
     });
   }
 }
