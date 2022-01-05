@@ -2,6 +2,9 @@
     <div class="hello">
         <h1 @click="getLineInfo()">hello</h1>
         <h1>{{profile.userId}}</h1>
+        <router-link to="/lineInfo">
+            <button>Line Info</button>
+        </router-link>
     </div>
 </template>
 

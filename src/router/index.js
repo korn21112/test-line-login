@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import home from '../components/Home.vue';
+import lineInfo from '../components/LineInfo.vue'
 // import productdetails from '../components/ProductDetails.vue';
 // import aboutus from '../components/Aboutus.vue';
 // import login from '../components/Login.vue';
@@ -18,6 +19,11 @@ const routes = [
         name: 'Home',
         component:home
     },
+    {
+        path: '/lineInfo',
+        name: 'LineInfo',
+        component:lineInfo
+    }
     // {
     //     path: '/Productdetails',
     //     name: 'ProductDetails',
