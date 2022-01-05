@@ -36,7 +36,7 @@ export default {
             console.log('error', err);
           });
       } else {
-        liff.login();
+        // liff.login();
       }
     });
   }
