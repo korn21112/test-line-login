@@ -1,6 +1,7 @@
 <template>
     <div class="hello">
         <h1 @click="getLineInfo()">hello</h1>
+        <h1>{{userId}}</h1>
     </div>
 </template>
 
@@ -8,6 +9,11 @@
 import liff from '@line/liff';
 export default {
     name: 'Home',
+    data() {
+        return {
+            userId=""
+        }
+    },
     props: {
         msg: String
     },
