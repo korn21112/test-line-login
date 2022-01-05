@@ -10,6 +10,7 @@
 </template>
 
 <script>
+import liff from '@line/liff';
 export default {
   name: 'LineInfo',
   // components: {
