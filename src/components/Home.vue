@@ -1,7 +1,7 @@
 <template>
     <div class="hello">
         <h1 @click="getLineInfo()">hello</h1>
-        <h1>{{userId}}</h1>
+        <h1>{{profile.userId}}</h1>
     </div>
 </template>
 
@@ -11,7 +11,9 @@ export default {
     name: 'Home',
     data() {
         return {
-            userId=""
+            profile : {
+                userId : ""
+            }
         }
     },
     props: {
