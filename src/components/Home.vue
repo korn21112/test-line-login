@@ -3,7 +3,7 @@
         <h1>home</h1>
         <h1 @click="getLineInfo()">login</h1>
         <h1>{{ profile.userId }}</h1>
-        <h1>logout</h1>
+        <h1 @click="logout()">logout</h1>
         <router-link to="/lineInfo">
             <button>Line Info</button>
         </router-link>
